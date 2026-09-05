@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payroll Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="chat-card">
+      <header class="chat-header">
+        <div class="assistant-avatar">AI</div>
+        <div>
+          <h1>Payroll Assistant</h1>
+          <p><span class="status-dot"></span> Ready to help</p>
+        </div>
+      </header>
+
+      <div class="chat-body" id="chatBody">
+        <div class="message assistant-message">
+          <div class="message-label">Payroll Assistant</div>
+          <p>Hi! I can help with payroll-related questions.</p>
+        </div>
+        <div class="quick-actions">
+          <button type="button" data-question="How is net salary calculated?">Salary calculation</button>
+          <button type="button" data-question="What deductions are included in payroll?">Deductions</button>
+          <button type="button" data-question="How is tax calculated?">Tax calculation</button>
+        </div>
+      </div>
+
+      <form class="chat-input" id="chatForm">
+        <input id="messageInput" type="text" placeholder="Ask a payroll question..." autocomplete="off" required>
+        <button type="submit" aria-label="Send message">Send</button>
+      </form>
+      <p class="demo-note">Demo mode — connect this interface to your backend and AI API later.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
